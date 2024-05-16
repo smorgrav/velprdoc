@@ -1,5 +1,5 @@
 ---
-title: "Time booking"
+title: "Booke timer"
 description: "Hvordan booke tid."
 ---
 

@@ -7,8 +7,8 @@ export default defineConfig({
     starlight({
       favicon: "/favicon.ico",
       title: {
-        en: "Velpr documentation",
-        no: "Velpr dokumentasjon",
+        en: "Velpr Online",
+        "nb-NO": "Velpr Online",
       },
       social: {
         github: "https://github.com/withastro/starlight",
@@ -19,24 +19,24 @@ export default defineConfig({
           label: "English",
         },
         root: {
-          lang: "no",
+          lang: "nb-NO",
           label: "Norsk",
         },
       },
       sidebar: [
         {
           label: "For brukere",
-          translations: { no: "For brukere", en: "For users" },
+          translations: { "nb-NO": "For brukere", en: "For users" },
           autogenerate: { directory: "users" },
         },
         {
           label: "For admin",
-          translations: { no: "For admin", en: "For admins" },
+          translations: { "nb-NO": "For admin", en: "For admins" },
           autogenerate: { directory: "admins" },
         },
         {
           label: "Endringslogg",
-          translations: { no: "Endringslogg", en: "Changelog" },
+          translations: { "nb-NO": "Endringslogg", en: "Changelog" },
           autogenerate: { directory: "changelog" },
         },
       ],

@@ -1,22 +1,29 @@
 ---
-title: Velpr Dok
-description: Velpr Dokumentasjon
+title: Dokumentasjon
+description: Velprl Dokumentasjon
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Aside } from '@astrojs/starlight/components';
 
+Dette er dokumentasjonsiden til Velpr. 
+Her kan du finne informasjon om hvordan Velpr fungerer og hvordan du kan bruke det både som bruker og som
+eier, administrator eller arrangør.
+
+<Aside type="tip">
+Ser du etter tjenesten Velpr? [Gå til Velpr](https://velpr.online)
+</Aside>
+
+## For bruker
 
 <CardGrid>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+	<LinkCard title="Booke timer" href="users/bookitem"/>
+	<LinkCard title="Meld på arrangement" href="users/eventsignup"/>
 </CardGrid>
+
+
+## For admin
+<CardGrid>
+	<LinkCard title="Opprett system" href="admins/newsystem"/>
+	<LinkCard title="Om regler" href="admins/rules"/>
+</CardGrid>
+
