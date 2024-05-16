@@ -11,7 +11,7 @@ export default defineConfig({
         "nb-NO": "Velpr Online",
       },
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/smorgrav/velprdoc",
       },
       defaultLocale: "root",
       locales: {
