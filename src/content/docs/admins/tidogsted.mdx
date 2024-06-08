@@ -1,0 +1,52 @@
+---
+title: Tid og sted notasjon
+description: Format og eksempler på hvordan angi tid og sted i Velpr.
+---
+Flere steder i systemet kan/må man angi hvilke timer, dager og for hvilke enheter som  innstillingen er for.  Spesielt mye brukt er det i utleie info seksjonen.
+
+# Format
+
+utleieenhet@ukedager@timer # unntak
+
+“-” for å angi periode
+
+“,” for å angi liste
+
+“&” for å angi flere slike uttrykk  
+
+## Eksempler
+
+| man@17 | Mandag klokken 17 |
+| --- | --- |
+| lør-man@12-14 | Lørdag,søndag og mandag fra klokken 12 til 14 (Tre timer leie hver av disse dagene) |
+| man,tor@18,21 | Mandag og torsdag klokken 18 og klokken 21 |
+| u-2,u-3@man-fre@09-12 # 2023-12-24 | Utleie av u-2 og u-3 mandag til fredag fra 9 til 12 med unntak av julaften |
+| man-fre | Mandag til fredag med default åpningstider (som er satt et annet sted) |
+
+## Utleieenhet
+
+Dette er id kolonnen til utleie enheten
+
+## Ukedager
+
+Man kan bruke norsk eller engelsk og enten hele ukedagsnavnet eller de første tre bokstavene i ukedagen. Feks er både Mandag og Man gyldig. Store og må bokstaver skilles ikke.
+
+## Timer
+
+Et tall fra 0 til 23.
+
+# Unntak
+
+Unntak angies med # og følges deretter av en tid og sted enhet eller en dato. Datoen må skrives i formatet yyyy-mm-dd. Alternativt kan man også ha med time med å avslutte med :HH
+
+Feks kan alle dager unntatt fredag skrives som:
+
+@man-søn # fre
+
+Og skal man bare unnta en fredag så kan man skrive
+
+@man-søn # 2023-01-06
+
+# Flere enheter og flere unntak
+
+Man kan kombinere flere enheter med å bruke & i mellom hver enhet samt bruke # for hvert unntak.
